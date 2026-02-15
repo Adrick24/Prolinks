@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prolinks - Especialistas em Gestão inteligente de propriedades em Angola. Transformamos imóveis em espaços atrativos, funcionais e rentáveis.">
+    <title>Prolinks - Especialistas em Gestão inteligente de propriedades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home">
+                    <!-- Substitua pelo caminho da sua imagem de logo real -->
+                    <img src="assets/logo-prolinks.png" alt="Prolinks Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <h1 style="display: none;">PRO<span>LINKS</span></h1>
+                </a>
+            </div>
+            
+            <!-- Language Selector - FORA DO MENU -->
+            <div class="language-selector-header">
+                <button class="lang-btn active" data-lang="pt">
+                    <i class="fas fa-language"></i> PT
+                </button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="en">
+                    EN
+                </button>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu Mobile">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+            <nav id="mainNav">
+                <ul id="mainMenu">
+                    <li><a href="#home" class="nav-link" data-i18n="nav_home"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about"><i class="fas fa-users"></i> Quem Somos</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav_services"><i class="fas fa-cogs"></i> Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-i18n="nav_portfolio"><i class="fas fa-images"></i> Portfólio</a></li>
+                    <li><a href="#partners" class="nav-link" data-i18n="nav_partners"><i class="fas fa-handshake"></i> Parceiros</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact"><i class="fas fa-envelope"></i> Contactos</a></li>
+                    <li><a href="#contact" class="nav-btn" data-i18n="nav_quote">Solicitar Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title" data-i18n="hero_title">Transformamos propriedades em <span class="highlight">espaços atrativos</span>, funcionais e rentáveis</h2>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Especialistas em remodelação, design e gestão de propriedades em Angola. Oferecemos soluções completas desde a concepção até à gestão operacional.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_quote">Solicite um Orçamento</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero_btn_services">Conheça Nossos Serviços</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats container">
+            <div class="stat-item">
+                <span class="stat-number" data-count="150">0</span>
+                <span class="stat-text" data-i18n="stat_projects">Projetos Concluídos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="50">0</span>
+                <span class="stat-text" data-i18n="stat_clients">Clientes Satisfeitos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-text" data-i18n="stat_experience">Anos de Experiência</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="24">0</span>
+                <span class="stat-text" data-i18n="stat_support">Suporte 24/7</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-subtitle" data-i18n="about_subtitle">Conheça a nossa história</span>
+                <h2 class="section-heading" data-i18n="about_title">Quem Somos</h2>
+                <p class="section-description" data-i18n="about_description">A Prolinks é uma empresa especializada em remodelação, design e gestão de propriedades, criada para transformar propriedades em espaços mais atrativos, funcionais e rentáveis.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Equipe Prolinks" loading="lazy">
+                    </div>
+                    <div class="experience-badge">
+                        <span>12+</span>
+                        <p data-i18n="about_experience">Anos de Experiência</p>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 data-i18n="about_history_title">Nossa História</h3>
+                    <p data-i18n="about_history_text">A empresa nasce da visão da sua Directora Geral, que identificou no mercado angolano a necessidade de soluções integradas capazes de responder, de forma profissional e eficiente, aos desafios da valorização e gestão de propriedades.</p>
+                    
+                    <div class="mission-vision">
+                        <div class="mv-card">
+                            <div class="mv-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4 data-i18n="about_mission">Missão</h4>
+                            <p data-i18n="about_mission_text">Transformar propriedades em espaços atrativos, funcionais e rentáveis através de soluções integradas de remodelação, design e gestão de propriedades.</p>
+                        </div>
+                        
+                        <div class="mv-card">
+                            <div class="mv-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4 data-i18n="about_vision">Visão</h4>
+                            <p data-i18n="about_vision_text">Ser referência no sector da remodelação, design e gestão de propriedades em Angola, reconhecida pela excelência e inovação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Director Info -->
+            <div class="director-card">
+                <div class="director-image">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Helga Pombal" loading="lazy">
+                </div>
+                <div class="director-info">
+                    <h4>Helga Pombal</h4>
+                    <p class="director-title" data-i18n="about_director_title">Directora Geral da Prolinks</p>
+                    <p class="director-quote" data-i18n="about_director_quote">"Acreditamos que cada propriedade tem potencial para se tornar extraordinário."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="section-heading" data-i18n="values_title">Nossos Valores</h2>
+                <p class="section-description" data-i18n="values_subtitle">Princípios que guiam o nosso trabalho e relacionamento com os clientes</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 data-i18n="value1_title">Qualidade e Excelência</h3>
+                    <p data-i18n="value1_text">Compromisso com elevados padrões técnicos, estéticos e operacionais em todos os nossos projetos.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-i18n="value2_title">Inovação e Criatividade</h3>
+                    <p data-i18n="value2_text">Soluções modernas e personalizadas, aliando design funcional às últimas tendências do mercado.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 data-i18n="value3_title">Transparência e Confiança</h3>
+                    <p data-i18n="value3_text">Relações baseadas na ética, clareza de processos e comunicação contínua com os nossos clientes.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-i18n="value4_title">Sustentabilidade</h3>
+                    <p data-i18n="value4_text">Uso consciente de recursos e práticas responsáveis para um futuro mais sustentável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <span class="section-subtitle" data-i18n="services_subtitle">O que oferecemos</span>
+                <h2 class="section-heading" data-i18n="services_title">Nossos Serviços</h2>
+                <p class="section-description" data-i18n="services_description">Soluções completas para transformar e gerir o seu imóvel</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 data-i18n="service1_title">Gestão de Propriedades</h3>
+                    <p data-i18n="service1_text">Administração completa de propriedades para maximizar o rendimento e garantir manutenção.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="service1_feat1">Administração de propriedades</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service1_feat2">Gestão de condomínio</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service1_feat3">Manutenção geral</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3 data-i18n="service2_title">Remodelação e Design</h3>
+                    <p data-i18n="service2_text">Transformamos espaços através de remodelação completa e design de interiores e exteriores.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="service2_feat1">Remodelação e modernização</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service2_feat2">Design de interiores</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service2_feat3">Projetos personalizados</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3 data-i18n="service3_title">Alojamento Local</h3>
+                    <p data-i18n="service3_text">Gestão profissional de alojamentos locais para optimizar rendimentos e oferecer excelência.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="service3_feat1">Gestão Airbnb</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service3_feat2">Hospedagem premium</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service3_feat3">Otimização de rendimento</span></li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 data-i18n="service4_title">Serviços Adicionais</h3>
+                    <p data-i18n="service4_text">Oferecemos serviços complementares para uma experiência completa de gestão imobiliária.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="service4_feat1">Gestão de serviços</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service4_feat2">Compras e confeção</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="service4_feat3">Pacotes turísticos</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="section-heading" data-i18n="portfolio_title">Nossos Trabalhos</h2>
+                <p class="section-description" data-i18n="portfolio_description">Alguns dos projetos que realizamos com excelência</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Projeto Residencial" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 data-i18n="portfolio1_title">Residencial Moderno</h4>
+                        <p data-i18n="portfolio1_subtitle">Remodelação completa</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80" alt="Projeto Comercial" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 data-i18n="portfolio2_title">Espaço Comercial</h4>
+                        <p data-i18n="portfolio2_subtitle">Design e gestão</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Alojamento Local" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 data-i18n="portfolio3_title">Alojamento Local</h4>
+                        <p data-i18n="portfolio3_subtitle">Gestão Airbnb</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="section-heading" data-i18n="partners_title">Nossos Parceiros</h2>
+                <p class="section-description" data-i18n="partners_description">Colaboramos com empresas de referência para oferecer o melhor serviço</p>
+            </div>
+            
+            <div class="partners-slider">
+                <div class="partner-logo">
+                    <div class="partner-placeholder">CC Studio</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-placeholder">Skyliam Properties</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-placeholder">Brimont</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-placeholder">Arquiteto & Cia</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="partner-placeholder">Construtec</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="section-heading" data-i18n="contact_title">Entre em Contacto</h2>
+                <p class="section-description" data-i18n="contact_description">Tem um projeto em mente? Vamos conversar!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_address">Endereço</h4>
+                            <p>Luanda, Angola</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_phone">Telefone</h4>
+                            <p>+244 921 719 400</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_email">Email</h4>
+                            <p>geral@prolinks.ao</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_hours">Horário</h4>
+                            <p data-i18n="contact_week">Seg-Sex: 8h-18h</p>
+                            <p data-i18n="contact_saturday">Sábado: 9h-13h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form_name">Nome Completo *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-i18n="form_email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-i18n="form_phone">Telefone</label>
+                            <input type="text" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-i18n="form_service">Serviço de Interesse</label>
+                            <select id="service">
+                                <option value="" data-i18n="form_select">Selecione um serviço</option>
+                                <option value="remodelacao" data-i18n="form_option1">Remodelação e Design</option>
+                                <option value="gestao" data-i18n="form_option2">Gestão de Imóveis</option>
+                                <option value="alojamento" data-i18n="form_option3">Alojamento Local</option>
+                                <option value="outro" data-i18n="form_option4">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_message">Mensagem *</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-i18n="form_submit">Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>PRO<span>LINKS</span></h3>
+                    <p data-i18n="footer_slogan">Transformamos imóveis em espaços atrativos, funcionais e rentáveis.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-i18n="footer_quick_links">Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav_home">Início</a></li>
+                        <li><a href="#about" data-i18n="nav_about">Quem Somos</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Serviços</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4 data-i18n="footer_services">Serviços</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="service1_title">Remodelação e Design</a></li>
+                        <li><a href="#services" data-i18n="service2_title">Gestão de Imóveis</a></li>
+                        <li><a href="#services" data-i18n="service3_title">Alojamento Local</a></li>
+                        <li><a href="#services" data-i18n="service4_title">Serviços Adicionais</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4 data-i18n="footer_newsletter">Newsletter</h4>
+                    <p data-i18n="footer_newsletter_text">Subscreva para receber as últimas novidades</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu email" data-i18n-placeholder="footer_email_placeholder" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Prolinks. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+                <p><span data-i18n="footer_developed">Desenvolvido por</span> <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.instagram.com%2Fadrickadriano%3Figsh%3DeGpkcmZ5aWl4Ymow%26utm_source%3Dqr%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnvOIjHqnsc2CvkFQn7QiXosMz8boPyCY3brzQUQu1c6QHvdnfrWU7aW5hZdk_aem_7N5Q1OYeHlYkrG6lc47pBQ&e=AT0DZ4eWfN7lrR7MGGwEWFY0QKROuLt_YeJALLcwlqSPROqe0uiTAI9XKEGBw6lbeqnsSohNMuT6MY6w6ByDykuvw9dpLnqNsu2kWyNXiA" target="_blank">Adrick Adriano</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
